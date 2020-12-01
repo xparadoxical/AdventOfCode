@@ -5,6 +5,9 @@ param (
 
 $Code = @"
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace AdventOfCode.Year${Year}
 {
@@ -28,6 +31,11 @@ namespace AdventOfCode.Year${Year}
 "@;
 
 $Test = @"
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AdventOfCode.Year${Year}
