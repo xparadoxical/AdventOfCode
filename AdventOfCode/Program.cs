@@ -44,7 +44,7 @@ namespace AdventOfCode
 
 		private static string GetEmbeddedInput(int year, int day)
 		{
-			using var stream = Assembly.GetExecutingAssembly()
+			using var stream = typeof(Program).Assembly
 				.GetManifestResourceStream($"AdventOfCode.Year{year}.Inputs.Day{day}.txt");
 			using var reader = new StreamReader(stream);
 
