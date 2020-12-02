@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode.Year2020
 {
-	public class Day2
+	public sealed class Day2
 	{
 		public static Regex entry = new Regex(@"^(?<min>\d+)-(?<max>\d+) (?<char>.): (?<password>.+)$", RegexOptions.Compiled);
 

@@ -1,17 +1,18 @@
 param (
-    $Year = (Get-Date).Year,
-    $Day = (Get-Date).Day
+	$Year = (Get-Date).Year,
+	$Day = (Get-Date).Day
 )
 
 $Code = @"
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace AdventOfCode.Year${Year}
 {
-	public class Day${Day}
+	public sealed class Day${Day}
 	{
 		public Day${Day}(string input)
 		{
@@ -34,6 +35,7 @@ $Test = @"
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -41,7 +43,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace AdventOfCode.Year${Year}
 {
 	[TestClass]
-	public class Day${Day}Tests
+	public sealed class Day${Day}Tests
 	{
 		[DataTestMethod]
 		[DataRow("", 0)]

@@ -8,7 +8,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace AdventOfCode.Year2020
 {
 	[TestClass]
-	public class Day2Tests
+	public sealed class Day2Tests
 	{
 		public const string INPUT = "1-3 a: abcde\n1-3 b: cdefg\n2-9 c: ccccccccc";
 

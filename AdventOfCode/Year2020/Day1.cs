@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode.Year2020
 {
-	public class Day1
+	public sealed class Day1
 	{
 		private readonly int[] input;
 		public Day1(string input)
