@@ -10,7 +10,7 @@ namespace AdventOfCode.Year2020
 	{
 		public static Regex entry = new Regex(@"^(?<min>\d+)-(?<max>\d+) (?<char>.): (?<password>.+)$", RegexOptions.Compiled);
 
-		private IEnumerable<PasswordEntry> entries;
+		private readonly IEnumerable<PasswordEntry> entries;
 
 		public Day2(string input)
 		{
