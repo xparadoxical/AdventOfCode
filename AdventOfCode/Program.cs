@@ -12,11 +12,21 @@ namespace AdventOfCode
 	{
 		public static void Main(string[] args)
 		{
+#if !DEBUG
 			if (args.Length < 3)
 			{
 				Console.WriteLine("AdventOfCode [Year] [Day] [Part] (Input)");
 				return;
 			}
+#else
+			args = new string[3];
+			Console.Write("Year: ");
+			args[0] = Console.ReadLine();
+			Console.Write("Day: ");
+			args[1] = Console.ReadLine();
+			Console.Write("Part: ");
+			args[2] = Console.ReadLine();
+#endif
 
 			var year = int.Parse(args[0], CultureInfo.InvariantCulture);
 			var day = int.Parse(args[1], CultureInfo.InvariantCulture);
