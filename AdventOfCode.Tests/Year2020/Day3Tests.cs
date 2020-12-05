@@ -11,7 +11,7 @@ namespace AdventOfCode.Year2020
 	[TestClass]
 	public sealed class Day3Tests
 	{
-		public const string INPUT =@"
+		public const string Input =@"
 ..##.......
 #...#...#..
 .#....#..#.
@@ -25,14 +25,14 @@ namespace AdventOfCode.Year2020
 .#..#...#.#";
 
 		[DataTestMethod]
-		[DataRow(INPUT, 7)]
+		[DataRow(Input, 7)]
 		public void Part1(string input, int expected)
 		{
 			Assert.AreEqual(expected, new Day3(input).Part1());
 		}
 
 		[DataTestMethod]
-		[DataRow(INPUT, 336ul)]
+		[DataRow(Input, 336ul)]
 		public void Part2(string input, ulong expected)
 		{
 			Assert.AreEqual(expected, new Day3(input).Part2());

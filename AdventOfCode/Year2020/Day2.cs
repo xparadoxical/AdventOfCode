@@ -8,7 +8,7 @@ namespace AdventOfCode.Year2020
 {
 	public sealed class Day2
 	{
-		public static Regex entry = new Regex(@"^(?<min>\d+)-(?<max>\d+) (?<char>.): (?<password>.+)$", RegexOptions.Compiled);
+		private static readonly Regex entry = new Regex(@"^(?<min>\d+)-(?<max>\d+) (?<char>.): (?<password>.+)$", RegexOptions.Compiled);
 
 		private readonly IEnumerable<PasswordEntry> entries;
 
