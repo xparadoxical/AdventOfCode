@@ -8,7 +8,17 @@ namespace AdventOfCode
 {
 	public static class Helpers
 	{
+		public static readonly string[] LineSeparators = new[] { Environment.NewLine, "\n", "\r" };
+
 		public static string[] Lines(this string s)
-			=> s.Split(new[] { Environment.NewLine, "\n", "\r" }, StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+			=> s.Split(LineSeparators, StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+
+		public static string Replace(this string s, ICollection<string> oldValues, string newValue)
+		{
+			foreach (string oldValue in oldValues)
+				s = s.Replace(oldValue, newValue);
+
+			return s;
+		}
 	}
 }
