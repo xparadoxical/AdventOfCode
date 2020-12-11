@@ -11,8 +11,8 @@ namespace AdventOfCode.Year2020
 	[TestClass]
 	public sealed class Day3Tests
 	{
-		public const string Input =@"
-..##.......
+		public const string Input =
+@"..##.......
 #...#...#..
 .#....#..#.
 ..#.#...#.#
