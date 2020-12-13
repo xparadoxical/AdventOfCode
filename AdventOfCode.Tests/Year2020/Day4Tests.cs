@@ -11,8 +11,8 @@ namespace AdventOfCode.Year2020
 	[TestClass]
 	public sealed class Day4Tests
 	{
-		public const string Input =
-@"ecl:gry pid:860033327 eyr:2020 hcl:#fffffd
+		[DataTestMethod]
+		[DataRow(@"ecl:gry pid:860033327 eyr:2020 hcl:#fffffd
 byr:1937 iyr:2017 cid:147 hgt:183cm
 
 iyr:2013 ecl:amb cid:350 eyr:2023 pid:028048884
@@ -24,10 +24,7 @@ ecl:brn pid:760753108 byr:1931
 hgt:179cm
 
 hcl:#cfa07d eyr:2025 pid:166559648
-iyr:2011 ecl:brn hgt:59in";
-
-		[DataTestMethod]
-		[DataRow(Input, 2)]
+iyr:2011 ecl:brn hgt:59in", 2)]
 		public void Part1(string input, int expected)
 		{
 			Assert.AreEqual(expected, new Day4(input).Part1());
@@ -47,12 +44,6 @@ ecl:brn hgt:182cm pid:021572410 eyr:2020 byr:1992 cid:277
 hgt:59cm ecl:zzz
 eyr:2038 hcl:74454a iyr:2023
 pid:3556412378 byr:2007", 0)]
-		public void Part2Invalid(string input, int expected)
-		{
-			Assert.AreEqual(expected, new Day4(input).Part2());
-		}
-
-		[DataTestMethod]
 		[DataRow(@"pid:087499704 hgt:74in ecl:grn iyr:2012 eyr:2030 byr:1980
 hcl:#623a2f
 
@@ -65,7 +56,7 @@ pid:545766238 ecl:hzl
 eyr:2022
 
 iyr:2010 hgt:158cm hcl:#b6652a ecl:blu byr:1944 eyr:2021 pid:093154719", 4)]
-		public void Part2Valid(string input, int expected)
+		public void Part2(string input, int expected)
 		{
 			Assert.AreEqual(expected, new Day4(input).Part2());
 		}
