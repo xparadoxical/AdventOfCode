@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -12,6 +12,7 @@
     <EmbeddedResource Include="Year2020\Inputs\Day4.txt" />
     <EmbeddedResource Include="Year2020\Inputs\Day5.txt" />
     <EmbeddedResource Include="Year2020\Inputs\Day6.txt" />
+    <EmbeddedResource Include="Year2020\Inputs\Day7.txt" />
   </ItemGroup>
 
 </Project>
