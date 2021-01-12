@@ -15,6 +15,7 @@
     <EmbeddedResource Include="Year2020\Inputs\Day7.txt" />
     <EmbeddedResource Include="Year2020\Inputs\Day11.txt" />
     <EmbeddedResource Include="Year2020\Inputs\Day12.txt" />
+    <EmbeddedResource Include="Year2020\Inputs\Day14.txt" />
     <EmbeddedResource Include="Year2020\Inputs\Day18.txt" />
   </ItemGroup>
 
