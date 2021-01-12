@@ -18,4 +18,8 @@
     <EmbeddedResource Include="Year2020\Inputs\Day18.txt" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="RegExtract" Version="1.0.17" />
+  </ItemGroup>
+
 </Project>
